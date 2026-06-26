@@ -9,8 +9,8 @@
   --text-done: hsl(233, 11%, 84%);
   --text-heading: hsl(0, 0%, 100%);
   --shadow: 0px 35px 50px -15px rgba(194, 195, 214, 0.5);
-  --bg-image: url(../assets/bg-image-light.png);
-  --icon-theme: url(..);
+  --bg-image: url(../assets/bg-desktop-light.jpg);
+  --icon-theme: url(../assets/icon-moon.svg);
   --checkbox-dark: hsl(0, 0%, 100%);
   --dragging-bg: hsl(236, 32%, 92%);
 }
@@ -25,8 +25,8 @@
   --text-secondary: hsl(234, 11%, 52%);
   --text-done: hsl(233, 14%, 35%);
   --shadow: 0px 35px 50px -15px rgba(0, 0, 0, 0.5);
-  --bg-image: url(/images/bg-desktop-dark.jpg);
-  --icon-theme: url(/images/icon-sun.svg);
+  --bg-image: url(../assets/bg-desktop-dark.jpg);
+  --icon-theme: url(../assets/icon-sun.svg);
   --checkbox-dark: hsl(235, 24%, 19%);
   --dragging-bg: hsl(235, 21%, 11%);
 }

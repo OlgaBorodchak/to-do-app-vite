@@ -89,7 +89,7 @@
 
 .todo-item-checkbox:checked {
   background:
-    url(/images/icon-check.svg) no-repeat center,
+    url(../assets/icon-check.svg) no-repeat center,
     linear-gradient(135deg, hsl(192, 100%, 67%), hsl(280, 87%, 65%));
   border: none;
 }
@@ -107,7 +107,7 @@
 }
 
 .todo-item-delete {
-  background: url(/images/icon-cross.svg) no-repeat center / contain;
+  background: url(../assets/icon-cross.svg) no-repeat center / contain;
   background-color: transparent;
   border: none;
   width: 1em;
@@ -125,7 +125,6 @@
   background-color: var(--dragging-bg);
 }
 
-/* ─── Status bar ─────────────────────────────────── */
 .status-bar {
   display: flex;
   align-items: center;
@@ -165,7 +164,6 @@
   color: var(--text-primary);
 }
 
-/* ─── Filter buttons ─────────────────────────────── */
 .filter-btn {
   border: none;
   background-color: transparent;
@@ -184,7 +182,6 @@
   color: hsl(220, 98%, 61%);
 }
 
-/* ─── Footer ─────────────────────────────────────── */
 .footer {
   display: flex;
   flex-direction: column;
@@ -205,19 +202,19 @@
   color: hsl(228, 45%, 44%);
 }
 
-/* ─── Media queries ──────────────────────────────── */
+
 @media (max-width: 700px) {
   .container {
     margin: 2em;
   }
 
   body {
-    background-image: url(/images/bg-mobile-light.jpg);
+    background-image: url(../assets/bg-mobile-light.jpg);
     background-size: contain;
   }
 
   .dark-mode {
-    background-image: url(/images/bg-mobile-dark.jpg);
+    background-image: url(../assets/bg-mobile-dark.jpg);
     background-size: contain;
   }
 
