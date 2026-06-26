@@ -1,11 +1,32 @@
 :root {
-  --font-body: 'Josefin Sans', sans-serif;
+  --bg-body: hsl(0, 0%, 98%);
+  --bg-card: hsl(0, 0%, 100%);
+  --bg-input: hsl(0, 0%, 100%);
+  --bg-add-btn: hsl(0, 0%, 100%);
+  --border-color: hsl(236, 32%, 92%);
+  --text-primary: hsl(235, 19%, 35%);
+  --text-secondary: hsl(235, 9%, 61%);
+  --text-done: hsl(233, 11%, 84%);
+  --text-heading: hsl(0, 0%, 100%);
+  --shadow: 0px 35px 50px -15px rgba(194, 195, 214, 0.5);
+  --bg-image: url(/images/bg-desktop-light.jpg);
+  --icon-theme: url(/images/icon-moon.svg);
+  --checkbox-dark: hsl(0, 0%, 100%);
+  --dragging-bg: hsl(236, 32%, 92%);
+}
 
-  --fw-regular: 400;
-  --fw-bold: 700;
-
-  --fs-18: 1.125rem;
-  --fs-14: 0.85rem;
-  --fs-12: 0.75rem;
-
+.dark-mode {
+  --bg-body: hsl(235, 21%, 11%);
+  --bg-card: hsl(235, 26%, 19%);
+  --bg-input: hsl(235, 24%, 19%);
+  --bg-add-btn: hsl(235, 24%, 19%);
+  --border-color: hsl(235, 14%, 26%);
+  --text-primary: hsl(235, 39%, 85%);
+  --text-secondary: hsl(234, 11%, 52%);
+  --text-done: hsl(233, 14%, 35%);
+  --shadow: 0px 35px 50px -15px rgba(0, 0, 0, 0.5);
+  --bg-image: url(/images/bg-desktop-dark.jpg);
+  --icon-theme: url(/images/icon-sun.svg);
+  --checkbox-dark: hsl(235, 24%, 19%);
+  --dragging-bg: hsl(235, 21%, 11%);
 }
