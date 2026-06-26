@@ -2,7 +2,7 @@ import { defineConfig } from 'vite'
 import { resolve } from 'path'
 
 export default defineConfig({
-  base: './to-do-app-vite',
+  base: '/to-do-app-vite/',
 
   resolve: {
     alias: {
