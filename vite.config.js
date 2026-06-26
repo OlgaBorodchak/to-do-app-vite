@@ -2,18 +2,12 @@ import { defineConfig } from 'vite'
 import { resolve } from 'path'
 
 export default defineConfig({
-  base: 'to-do-app-vite',
+  base: './to-do-app-vite',
 
   resolve: {
     alias: {
       '@': resolve(__dirname, 'src'),
     },
-  },
-
-  scripts: {
-    dev: 'vite',
-    build: 'vite build',
-    deploy: 'npm run build && gh-pages -d dist',
   },
 
   server: {

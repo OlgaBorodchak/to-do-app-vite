@@ -11,5 +11,43 @@
     <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100..700&display=swap" rel="stylesheet">
   </head>
   <body>
+    <main>
+      <div class="container">
+        <header class="heading">
+          <h1 class="heading-title">TODO</h1>
+          <button class="heading-theme-btn" id="theme-toggle" aria-label="Toggle dark mode"></button>
+        </header>
+        <form id="form" class="input-form">
+          <button class="input-form-add-btn" type="button" id="btn-add-task" aria-label="Add task"></button>
+          <input
+            id="todo-input"
+            class="input-form-field"
+            type="text"
+            placeholder="Create a new todo..."
+          />
+        </form>
+
+        <ul class="todo-list" id="todo-list"></ul>
+
+        <div class="status-bar">
+          <p class="status-bar-count"><span id="score" aria-live="polite"></span></p>
+          <div class="status-bar-filters">
+            <button class="filter-btn filter-btn-active" type="button" id="all">All</button>
+            <button class="filter-btn" type="button" id="active">Active</button>
+            <button class="filter-btn" type="button" id="completed">Completed</button>
+          </div>
+          <button class="status-bar-clear-btn" type="button" id="clear-btn">Clear Completed</button>
+        </div>
+      </div>
+    </main>
+
+    <footer class="footer">
+      <p class="footer-drag-hint">Drag and drop to reorder list</p>
+      <p class="footer-attribution">
+        Challenge by
+        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank" rel="noopener noreferrer">Frontend Mentor</a>.
+        Coded by <a href="https://curlycoder.ca">Olga Borodchak</a>.
+      </p>
+    </footer>
   </body>
 </html>
