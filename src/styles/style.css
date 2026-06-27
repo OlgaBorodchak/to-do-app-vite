@@ -58,6 +58,11 @@
   caret-color: hsl(220, 98%, 61%);
 }
 
+.input-form-field:focus-visible {
+  outline: 1px solid  hsl(280, 87%, 65%);
+  outline-offset: 2px;
+}
+
 .input-form-field::placeholder {
   color: var(--text-secondary);
 }
