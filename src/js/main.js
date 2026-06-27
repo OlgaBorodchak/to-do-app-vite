@@ -1,5 +1,5 @@
-import './styles/style.css'
-import { initTheme } from './theme.js'
+import '../styles/style.css'
+import { initTheme } from './theme'
 
 initTheme()
 
