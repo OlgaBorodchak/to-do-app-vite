@@ -122,12 +122,16 @@
   background-color: transparent;
   width: 1em;
   height: 1em;
-  display: none;
   flex-shrink: 0;
+  opacity: 0;
+  pointer-events: none;
 }
 
-.todo-item:hover .todo-item-delete {
-  display: block;
+.todo-item:hover .todo-item-delete,
+.todo-item:focus-within .todo-item-delete,
+.todo-item-delete:focus-visible {
+  opacity: 1;
+  pointer-events: auto;
 }
 
 .todo-item-dragging {
