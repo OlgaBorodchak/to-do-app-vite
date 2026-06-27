@@ -26,8 +26,12 @@ addBtn.addEventListener('click', addTask)
 
 filterBtns.forEach((btn) => {
   btn.addEventListener('click', () => {
-    filterBtns.forEach((b) => b.classList.remove('filter-btn-active'))
+    filterBtns.forEach((b) => {
+      b.classList.remove('filter-btn-active')
+      b.setAttribute('aria-pressed', 'false')
+    })
     btn.classList.add('filter-btn-active')
+    btn.setAttribute('aria-pressed', 'true')
     currentFilter = btn.id
     renderTasks()
   })
@@ -136,7 +140,7 @@ function renderTasks() {
     const deleteBtn = document.createElement('button')
     deleteBtn.type = 'button'
     deleteBtn.className = 'todo-item-delete'
-    deleteBtn.setAttribute('aria-label', 'Delete task')
+    deleteBtn.setAttribute('aria-label', `Delete ${task.text}`)
 
     li.append(checkbox, label, deleteBtn)
     todoList.appendChild(li)

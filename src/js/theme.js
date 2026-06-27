@@ -8,7 +8,8 @@ export function initTheme() {
 
   toggleBtn.addEventListener('click', () => {
     body.classList.toggle('dark-mode');
-    const theme = body.classList.contains('dark-mode') ? 'dark' : 'light';
-    localStorage.setItem('theme', theme);
+    const isDark = body.classList.contains('dark-mode');
+    localStorage.setItem('theme', isDark ? 'dark' : 'light');
+    toggleBtn.setAttribute('aria-label', isDark ? 'Toggle light mode' : 'Toggle dark mode');
   });
 }

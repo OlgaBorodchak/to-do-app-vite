@@ -24,6 +24,7 @@
             class="input-form-field"
             type="text"
             placeholder="Create a new todo..."
+            aria-label="New todo"
           />
         </form>
 
@@ -32,9 +33,9 @@
         <div class="status-bar">
           <p class="status-bar-count"><span id="score" aria-live="polite"></span></p>
           <div class="status-bar-filters">
-            <button class="filter-btn filter-btn-active" type="button" id="all">All</button>
-            <button class="filter-btn" type="button" id="active">Active</button>
-            <button class="filter-btn" type="button" id="completed">Completed</button>
+            <button class="filter-btn filter-btn-active" type="button" id="all" aria-pressed="true">All</button>
+            <button class="filter-btn" type="button" id="active" aria-pressed="false">Active</button>
+            <button class="filter-btn" type="button" id="completed" aria-pressed="false">Completed</button>
           </div>
           <button class="status-bar-clear-btn" type="button" id="clear-btn">Clear Completed</button>
         </div>
