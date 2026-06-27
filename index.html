@@ -8,8 +8,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100..700&display=swap" rel="stylesheet">
-    <script type="module" crossorigin src="/to-do-app-vite/assets/index-CMWSLTYt.js"></script>
-    <link rel="stylesheet" crossorigin href="/to-do-app-vite/assets/index-B8qrq5kU.css">
+    <script type="module" crossorigin src="/to-do-app-vite/assets/index-CtsOgMk4.js"></script>
+    <link rel="stylesheet" crossorigin href="/to-do-app-vite/assets/index-lr0Kh4Vx.css">
   </head>
   <body>
     <main>
@@ -25,6 +25,7 @@
             class="input-form-field"
             type="text"
             placeholder="Create a new todo..."
+            aria-label="New todo"
           />
         </form>
 
@@ -33,9 +34,9 @@
         <div class="status-bar">
           <p class="status-bar-count"><span id="score" aria-live="polite"></span></p>
           <div class="status-bar-filters">
-            <button class="filter-btn filter-btn-active" type="button" id="all">All</button>
-            <button class="filter-btn" type="button" id="active">Active</button>
-            <button class="filter-btn" type="button" id="completed">Completed</button>
+            <button class="filter-btn filter-btn-active" type="button" id="all" aria-pressed="true">All</button>
+            <button class="filter-btn" type="button" id="active" aria-pressed="false">Active</button>
+            <button class="filter-btn" type="button" id="completed" aria-pressed="false">Completed</button>
           </div>
           <button class="status-bar-clear-btn" type="button" id="clear-btn">Clear Completed</button>
         </div>
