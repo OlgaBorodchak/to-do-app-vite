@@ -1,4 +1,4 @@
-import './main.css'
+import '../styles/style.css'
 import { initTheme } from './theme.js'
 
 initTheme()
